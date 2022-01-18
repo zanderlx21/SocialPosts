@@ -8,15 +8,17 @@ import PostForm from "./PostForm"
 export default function SocialPosts() {
 
     const [posts, setPost] = useState<Post[]>([
-        {title: "Saw a Ghost", thought: "Saw some glowing light in the basement"},
-        {title: "Feeling hungry", thought: "Who's in the mood for sushi"},
-        {title: "My new car!", thought: "Check out my new Porsche!"}
+        {title: "My NFT is worth Millions!", thought: "You guys gotta get on this!"},
+        {title: "Delorean for Sale", thought: "Wait until this baby hits 88mph"},
+        {title: "Time Travel is real!", thought: "All you need is a Flux Capacitor!"}
     ]);
 
     const [hidden, setHidden] = useState<boolean>(true);
 
     function handlePostFormSubmit (post: Post) {
+        
         setPost((prev) => [...posts, post]);
+        setHidden(true)
     }
 
     function handleDeletePost(index: number) {

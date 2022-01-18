@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import SocialPosts from './components/SocialPosts';
 import "./components/styles.css" 
 

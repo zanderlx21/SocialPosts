@@ -1,5 +1,5 @@
 import React from "react";
-import Post from "../model/Post"
+import Post from "../model/Post";
 import "./styles.css"
 
 
@@ -17,9 +17,13 @@ function PostInList({ post, onDelete }: PostProp){
             <p id="PostTitle">{post.title}</p>
             <p id="PostThought">{post.thought}</p>
             </div>
-            
+
         <div className="TrashIcon">
-            <img src="https://freesvg.org/img/trash.png" onClick={onDelete} height="30px" width="30px"></img>
+            <img src="https://cdns.iconmonstr.com/wp-content/assets/preview/2017/240/iconmonstr-trash-can-27.png" 
+            onClick={onDelete} 
+            height="15px" 
+            width="15px"
+            alt="TrashCanIcon"></img>
         </div>
         
         </div>

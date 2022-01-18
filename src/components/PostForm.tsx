@@ -13,7 +13,6 @@ const [title, setTitle ] = useState("")
 const [thought, setThought ] = useState("")
 
 
-
     function handlePostFormSubmit(e:FormEvent){
         e.preventDefault();
 
@@ -31,7 +30,8 @@ const [thought, setThought ] = useState("")
     <img 
     src="https://www.iconninja.com/files/1008/1024/1020/warning-delete-cross-stop-close-exit-cancel-icon.png" 
     id="CloseFormIcon" 
-    onClick={onClose}>
+    onClick={onClose}
+    alt="closeIcon">
     </img>
 
     <p>Title</p>
@@ -39,7 +39,7 @@ const [thought, setThought ] = useState("")
     <p>Thought</p>
     <textarea id="thoughtTextArea" placeholder="Here's a thought!" name="thoughtTextArea" rows={12} cols={25} value={thought} onChange={(e) => setThought(e.target.value)}></textarea>
     <br></br>
-    <button id="submitForm" type="submit">Add Post</button>
+    <button id="submitForm" type="submit" >Add Post</button>
     </form>
     </div>
     );
