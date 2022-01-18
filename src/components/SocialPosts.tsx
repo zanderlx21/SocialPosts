@@ -32,9 +32,9 @@ return (
         <PostInList key={i} post={post}  onDelete={ ()=> handleDeletePost(i)} />
         ))}
         <div>
-        <div className="blurBG"></div>
-{!hidden ? <PostForm onSubmit={handlePostFormSubmit} onClose={() => setHidden(true)} /> : null}</div>
-    </div>
+        {!hidden ? <div className="blurBG"><p></p></div> : null}
+        {!hidden ? <PostForm onSubmit={handlePostFormSubmit} onClose={() => setHidden(true)} /> : null}</div>
+        </div>
 
 </div>
 

@@ -37,9 +37,9 @@ const [thought, setThought ] = useState("")
     <p>Title</p>
     <input type="text" id="title" placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)}/>
     <p>Thought</p>
-    <textarea id="thoughtTextArea" name="thoughtTextArea" rows={12} cols={25} value={thought} onChange={(e) => setThought(e.target.value)}></textarea>
+    <textarea id="thoughtTextArea" placeholder="Here's a thought!" name="thoughtTextArea" rows={12} cols={25} value={thought} onChange={(e) => setThought(e.target.value)}></textarea>
     <br></br>
-    <button type="submit">Add Post</button>
+    <button id="submitForm" type="submit">Add Post</button>
     </form>
     </div>
     );
