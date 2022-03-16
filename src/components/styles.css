@@ -3,40 +3,63 @@
 body {
     background-color: #f3f1f7;
     font-family: 'Caveat', cursive;
-font-family: 'Homemade Apple', cursive;
-/* font-family: 'Lato', sans-serif;
-font-family: 'Open Sans', sans-serif; */
-font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Homemade Apple', cursive;
+    font-family: 'PT Sans Caption', sans-serif;
+    }
+
+    *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+
+
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transform: translateY(-50px);
+}
+
+.PostsParent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
 
 .PostsParent h1 {
     color: #03a9f4;
+    font-size: 3em;
     font-family: 'Homemade Apple', cursive;
+    margin-bottom: 15px;
 }
 
 .NewThought {
 border: 2px solid rgb(0, 0, 0);
 border-radius: 10px;
 background-color: #03a9f4;
-width: 500px;
+width: 100%;
 height: 50px;
-margin-bottom: 7px;
+margin-top: 15px;
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'PT Sans Caption', sans-serif;
 font-weight: 900;
 font-size: 1rem;
 color: white;
-
-
+transition: 250ms;
 }
 
-.PostsParent {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+.NewThought:hover {
+    background-color: #08a7f1;
+    border: 2px solid #262d30;
+    transform: scale(1.01);
 }
+
+
 
 .PostsMap {
     border-radius: 10px;
@@ -114,7 +137,6 @@ font-size: 24px;
     height: 40px;
     
 }
-
 
 #CloseFormIcon {
     height: 25px;
