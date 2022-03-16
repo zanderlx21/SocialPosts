@@ -16,6 +16,7 @@ function PostInList({ post, onDelete }: PostProp){
         <div className="EachPost">
             <p id="PostTitle">{post.title}</p>
             <p id="PostThought">{post.thought}</p>
+            
             </div>
 
         <div className="TrashIcon">

@@ -8,9 +8,10 @@ import PostForm from "./PostForm"
 export default function SocialPosts() {
 
     const [posts, setPost] = useState<Post[]>([
-        {title: "Howdy Partners", thought: "Learning React is a blast!"},
-        {title: "Burritos", thought: "They taste good with guacamole"},
-        {title: "Used Delorean for Sale", thought: "Wait until this baby hits 88mph"}
+        {title: "Hello Peoples", thought: "Learning React is pretty awesome!"},
+        {title: "Shower Thought", thought: "you're not in traffic...you ARE traffic"},
+        {title: "Cheesy Burritos", thought: "They taste really good with some guacamole"},
+        
     ]);
 
     const [hidden, setHidden] = useState<boolean>(true);
@@ -27,7 +28,7 @@ export default function SocialPosts() {
 
 return (
 <div className="PostsParent">
-    <h1>My thoughts</h1>
+    <h1>My Thoughts</h1>
     <div className="PostsMap">
         {posts.map((post, i) => (
         <PostInList 

@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Homemade+Apple&family=Lato:wght@100&family=Open+Sans:wght@300&family=PT+Sans+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 
 body {
     background-color: #f3f1f7;
     font-family: 'Caveat', cursive;
     font-family: 'Homemade Apple', cursive;
     font-family: 'PT Sans Caption', sans-serif;
+    margin-top: 20px;
     }
 
     *,
@@ -13,13 +17,11 @@ body {
     box-sizing: border-box;
   }
 
-
-
 .App{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     transform: translateY(-50px);
 }
 
@@ -28,13 +30,26 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 80%;
     }
 
 .PostsParent h1 {
     color: #03a9f4;
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: 'Homemade Apple', cursive;
+    font-family: 'Satisfy', cursive;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Marck Script', cursive;
     margin-bottom: 15px;
+    animation: float 2s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+    0% {transform: translateY(-7px)}
+    100% {transform: translateY(px)}
+    /* 50% {transform: translate(0)}
+    75% {transform: translateY(-10px)}
+    100% {transform: translate(0)} */
 }
 
 .NewThought {
@@ -54,7 +69,7 @@ transition: 250ms;
 }
 
 .NewThought:hover {
-    background-color: #08a7f1;
+    background-color: #0094d8;
     border: 2px solid #262d30;
     transform: scale(1.01);
 }
@@ -64,40 +79,41 @@ transition: 250ms;
 .PostsMap {
     border-radius: 10px;
     border: 2px solid rgb(0, 0, 0);
-    width: 500px;
+    width: 100%;
 }
 
 .PostInList {
     text-align: center;
     background-color: rgb(255, 255, 255);
+    position: relative;
     display: flex;
     align-items: center;
     padding: 15px;
     border-radius: 10px;
+    width: 100%;
 }
 
 .EachPost{
     border-bottom: 1px solid rgb(196, 196, 196);
     padding: -20px;
-    width: 450px;
+    width: 100%;
     text-align: left;
 }
 
 .TrashIcon {
-    right: 10%;
-    animation: rotation 1s calc(1) linear;
+    align-self: flex-end;
+    padding: 0 10px 13px 0;
+    position: absolute;
+    right: 20px;
+    transition: 250ms;
     /* border: 2px dashed black; */
     /* border-radius: 50%; */
 }
 
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+.TrashIcon:hover {
+    transform: scale(1.2);
+}
+
 
 #PostTitle {
 font-weight: 900;
@@ -155,4 +171,8 @@ font-size: 24px;
     transform: translate(-50%,-50%);
     
 }
+
+/* @media screen and (min-width: 480px){
+    
+} */
 
