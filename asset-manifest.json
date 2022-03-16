@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/SocialPosts/static/css/main.8efbc0c0.chunk.css",
-    "main.js": "/SocialPosts/static/js/main.3e4513c6.chunk.js",
-    "main.js.map": "/SocialPosts/static/js/main.3e4513c6.chunk.js.map",
+    "main.css": "/SocialPosts/static/css/main.776bb66b.chunk.css",
+    "main.js": "/SocialPosts/static/js/main.48e0b3ee.chunk.js",
+    "main.js.map": "/SocialPosts/static/js/main.48e0b3ee.chunk.js.map",
     "runtime~main.js": "/SocialPosts/static/js/runtime~main.86ed1566.js",
     "runtime~main.js.map": "/SocialPosts/static/js/runtime~main.86ed1566.js.map",
     "static/js/2.4ba44835.chunk.js": "/SocialPosts/static/js/2.4ba44835.chunk.js",
@@ -10,8 +10,8 @@
     "static/js/3.c541d426.chunk.js": "/SocialPosts/static/js/3.c541d426.chunk.js",
     "static/js/3.c541d426.chunk.js.map": "/SocialPosts/static/js/3.c541d426.chunk.js.map",
     "index.html": "/SocialPosts/index.html",
-    "precache-manifest.cbae423688212b4723a12f5e99486865.js": "/SocialPosts/precache-manifest.cbae423688212b4723a12f5e99486865.js",
+    "precache-manifest.4144ed56058f2517d715ce8ca9ee891c.js": "/SocialPosts/precache-manifest.4144ed56058f2517d715ce8ca9ee891c.js",
     "service-worker.js": "/SocialPosts/service-worker.js",
-    "static/css/main.8efbc0c0.chunk.css.map": "/SocialPosts/static/css/main.8efbc0c0.chunk.css.map"
+    "static/css/main.776bb66b.chunk.css.map": "/SocialPosts/static/css/main.776bb66b.chunk.css.map"
   }
 }
